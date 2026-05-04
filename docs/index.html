@@ -1,2 +1,92 @@
 <!DOCTYPE html>
-<html><body><h1>Poof Language</h1><p>Functional language by Ekaterina, Valeria, Irina</p></body></html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Poof Language</title>
+    <style>
+        body {
+            font-family: 'Courier New', monospace;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background: #1e1e2e;
+            color: #cdd6f4;
+        }
+        pre {
+            background: #313244;
+            padding: 15px;
+            border-radius: 10px;
+            overflow-x: auto;
+        }
+        h1, h2 {
+            color: #cba6f7;
+        }
+        a {
+            color: #89b4fa;
+        }
+        th, td {
+            border: 1px solid #45475a;
+            padding: 8px;
+            text-align: left;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>✨ Poof Language</h1>
+    <p>Функциональный язык программирования на основе лямбда-исчисления.</p>
+    
+    <h2>📖 Пример</h2>
+    <pre>
+spell fact n ->
+  if n == 0 then 1
+  else n * (cast fact with n - 1)
+whisper (cast fact with 5)  ~~ 120</pre>
+    
+    <h2>🚀 Быстрый старт</h2>
+    <pre>
+git clone https://github.com/EkaterinaChukanova/-.git
+cd -
+dotnet build poof
+dotnet run --project poof -- examples/factorial.poof</pre>
+    
+    <h2>📚 Синтаксис</h2>
+    <table>
+        <tr><th>Конструкция</th><th>Пример</th></tr>
+        <tr><td>Переменная</td><td><code>bind x to 42</code></td></tr>
+        <tr><td>Функция</td><td><code>spell double n -> n * 2</code></td></tr>
+        <tr><td>Вызов</td><td><code>cast double with 5</code></td></tr>
+        <tr><td>Условие</td><td><code>if x > 0 then 1 else -1</code></td></tr>
+        <tr><td>Список</td><td><code>[1, 2, 3]</code></td></tr>
+        <tr><td>Map</td><td><code>enchant (x -> x*2) [1,2,3]</code></td></tr>
+        <tr><td>Filter</td><td><code>sieve (x -> x>2) [1,2,3,4]</code></td></tr>
+        <tr><td>Вывод</td><td><code>whisper "Hello"</code></td></tr>
+        <tr><td>Ввод</td><td><code>listen</code></td></tr>
+    </table>
+    
+    <h2>🧪 Примеры</h2>
+    <ul>
+        <li><code>examples/factorial.poof</code> — факториал</li>
+        <li><code>examples/fibonacci.poof</code> — числа Фибоначчи</li>
+        <li><code>examples/fizzbuzz.poof</code> — FizzBuzz</li>
+        <li><code>examples/quicksort.poof</code> — быстрая сортировка</li>
+        <li><code>examples/y_combinator.poof</code> — Y-комбинатор</li>
+    </ul>
+    
+    <h2>👥 Авторы</h2>
+    <ul>
+        <li><strong>Екатерина Чуканова</strong> — AST + парсер</li>
+        <li><strong>Валерия Никишина</strong> — интерпретатор + рекурсия</li>
+        <li><strong>Ирина Бычкова</strong> — документация + примеры</li>
+    </ul>
+    
+    <h2>🔗 Ссылки</h2>
+    <ul>
+        <li><a href="https://github.com/EkaterinaChukanova/-">GitHub репозиторий</a></li>
+        <li><a href="https://github.com/EkaterinaChukanova/-/blob/main/README.md">README.md</a></li>
+    </ul>
+</body>
+</html>
