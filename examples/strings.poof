@@ -1,0 +1,10 @@
+~~ Работа со строками на Poof
+
+whisper "Enter your name:"
+bind name to listen
+whisper "Hello, " ++ name
+
+whisper "Length of your name:"
+whisper (measure name)
+
+whisper "Welcome to Poof!"
