@@ -124,17 +124,19 @@
 - **Полнота по Тьюрингу** — доказана Y-комбинатором
 
 ## Структура проекта
-## 📁 Структура проекта
-main/
+## Структура проекта
+
+<pre>
+Poof
 ├── .gitignore
 ├── README.md
 ├── sample.x
 │
-├── docs/                              # GitHub Pages (корневая папка)
-│   ├── index.html                     # Главная страница
-│   └── semantics-runtime.md           # Документация по семантике
+├── docs                         # GitHub Pages документация
+│   ├── index.html               # Главная страница
+│   └── semantics-runtime.md     # Семантика языка
 │
-├── examples/                          # Примеры программ на Poof
+├── examples                     # Примеры на Poof
 │   ├── factorial.poof
 │   ├── fibonacci.poof
 │   ├── fizzbuzz.poof
@@ -142,19 +144,20 @@ main/
 │   ├── strings.poof
 │   └── y_combinator.poof
 │
-├── stdlib/                            # Стандартная библиотека
+├── stdlib                       # Стандартная библиотека
 │   └── list.poof
 │
-└── poof/                              # Проект на F#
-    ├── src/
-    │   ├── AST.fs
-    │   ├── Lexer.fs
-    │   ├── Parser.fs
-    │   ├── Environment.fs
-    │   └── Interpreter.fs
-    ├── Program.fs
-    ├── Tests.fs
-    └── poof.fsproj
+└── poof                         # Интерпретатор на F#
+    ├── src
+    │   ├── AST.fs               # Абстрактное синтаксическое дерево
+    │   ├── Lexer.fs             # Лексический анализатор
+    │   ├── Parser.fs            # Парсер
+    │   ├── Environment.fs       # Окружение
+    │   └── Interpreter.fs       # Вычислитель
+    ├── Program.fs               # Точка входа
+    ├── Tests.fs                 # Тесты (204/205)
+    └── poof.fsproj              # Файл проекта
+</pre>
 
 ## Чек-лист выполненных требований
 
