@@ -42,9 +42,14 @@
     <h2> Пример</h2>
     <pre>
 spell fact n ->
-  if n == 0 then 1
-  else n * (cast fact with n - 1)
-whisper (cast fact with 5)  ~~ 120
+  if n == 0
+    then 1
+    else n * (cast fact with n - 1)
+
+whisper (cast fact with 0)
+whisper (cast fact with 1)
+whisper (cast fact with 5)
+whisper (cast fact with 10)
 </pre>
     
     <h2> Быстрый старт</h2>
