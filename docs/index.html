@@ -36,27 +36,29 @@
     </style>
 </head>
 <body>
-    <h1>✨ Poof Language</h1>
+    <h1> Poof Language</h1>
     <p>Функциональный язык программирования на основе лямбда-исчисления.</p>
     
-    <h2>📖 Пример</h2>
+    <h2> Пример</h2>
     <pre>
 spell fact n ->
   if n == 0 then 1
   else n * (cast fact with n - 1)
-whisper (cast fact with 5)  ~~ 120</pre>
+whisper (cast fact with 5)  ~~ 120
+</pre>
     
-    <h2>🚀 Быстрый старт</h2>
+    <h2> Быстрый старт</h2>
     <pre>
 git clone https://github.com/MAILabs-Edu-2026/funcpro-coursework-hope-squad.git
 cd funcpro-coursework-hope-squad
 dotnet build poof
-dotnet run --project poof -- examples/factorial.poof</pre>
+cat examples/factorial.poof | dotnet run --project poof
+</pre>
     
-    <h2>📚 Синтаксис</h2>
+    <h2> Синтаксис</h2>
     <table>
         <tr><th>Конструкция</th><th>Пример</th></tr>
-        <tr><td>Переменная</td><td><code>bind x to 42</code></td></tr>
+        <tr><td>Переменная</td><td><code>bind x to 42</code></td></td>
         <tr><td>Функция</td><td><code>spell double n -> n * 2</code></td></tr>
         <tr><td>Вызов</td><td><code>cast double with 5</code></td></tr>
         <tr><td>Условие</td><td><code>if x > 0 then 1 else -1</code></td></tr>
@@ -67,7 +69,7 @@ dotnet run --project poof -- examples/factorial.poof</pre>
         <tr><td>Ввод</td><td><code>listen</code></td></tr>
     </table>
     
-    <h2>🧪 Примеры</h2>
+    <h2> Примеры</h2>
     <ul>
         <li><code>examples/factorial.poof</code> — факториал</li>
         <li><code>examples/fibonacci.poof</code> — числа Фибоначчи</li>
@@ -76,14 +78,25 @@ dotnet run --project poof -- examples/factorial.poof</pre>
         <li><code>examples/y_combinator.poof</code> — Y-комбинатор</li>
     </ul>
     
-    <h2>👥 Авторы</h2>
+    <h2> Авторы</h2>
     <ul>
-        <li><strong>Екатерина Чуканова</strong> — AST + парсер</li>
-        <li><strong>Валерия Никишина</strong> — интерпретатор + рекурсия</li>
+        <li><strong>Екатерина Чуканова</strong> — интерпретатор + рекурсия</li>
+        <li><strong>Валерия Никишина</strong> — AST + парсер</li>
         <li><strong>Ирина Бычкова</strong> — документация + примеры</li>
     </ul>
+    <h2> Использование ИИ</h2>
+<p><strong>ИИ помогал с:</strong></p>
+<ul>
+    <li>Объяснением синтаксиса и концепций F#</li>
+    <li>Генерацией начальных версий лексера и парсера</li>
+    <li>Отладкой ошибок компилятора</li>
+    <li>Предложением исправлений</li>
+    <li>Написанием тестов</li>
+</ul>
+<p><strong>ИИ не делал:</strong> интерпретатор, архитектурные решения, понимание багов без нашего объяснения.</p>
+<p><strong>Чему научились:</strong> Работа с ИИ требует глубокого понимания кода. ИИ — помощник, а не автор.</p>
     
-    <h2>🔗 Ссылки</h2>
+    <h2> Ссылки</h2>
     <ul>
         <li><a href="https://github.com/MAILabs-Edu-2026/funcpro-coursework-hope-squad">GitHub репозиторий</a></li>
         <li><a href="https://github.com/MAILabs-Edu-2026/funcpro-coursework-hope-squad/blob/main/README.md">README.md</a></li>
